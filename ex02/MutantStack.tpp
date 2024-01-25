@@ -6,7 +6,7 @@
 /*   By: ychahbi <ychahbi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 17:27:12 by ychahbi           #+#    #+#             */
-/*   Updated: 2024/01/25 17:22:32 by ychahbi          ###   ########.fr       */
+/*   Updated: 2024/01/25 17:26:37 by ychahbi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 #define MUTANTSTACK_TPP
 
 #include "MutantStack.hpp"
-#include <thread>
 
 template <typename T>
 MutantStack<T>::MutantStack(){}
