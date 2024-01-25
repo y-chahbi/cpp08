@@ -6,11 +6,11 @@
 /*   By: ychahbi <ychahbi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 09:53:34 by ychahbi           #+#    #+#             */
-/*   Updated: 2024/01/24 09:54:11 by ychahbi          ###   ########.fr       */
+/*   Updated: 2024/01/25 17:21:17 by ychahbi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
+#include "MutantStack.hpp"
 
 int main()
 {
@@ -28,7 +28,6 @@ int main()
     mstack.push(3);
     mstack.push(5);
     mstack.push(737);
-    //[...]
     mstack.push(0);
 
     MutantStack<int>::iterator it = mstack.begin();
