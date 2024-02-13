@@ -6,7 +6,7 @@
 /*   By: ychahbi <ychahbi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 12:30:57 by ychahbi           #+#    #+#             */
-/*   Updated: 2024/01/24 17:25:40 by ychahbi          ###   ########.fr       */
+/*   Updated: 2024/02/13 09:05:38 by ychahbi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,13 @@ class Span
         std::vector<int> vect;
     public:
         Span();
-        void    addNumber(int);
-        int     shortestSpan();
-        int     longestSpan();
+        Span(const Span& Copy);
+        Span& operator=(const Span& Copy);
+        void                addNumber(int);
+        int                 shortestSpan();
+        int                 longestSpan();
+        const unsigned int& getN() const;
+        unsigned int getVector(int) const;
         Span(unsigned int);
         ~Span();
 };

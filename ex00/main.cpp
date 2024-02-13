@@ -6,7 +6,7 @@
 /*   By: ychahbi <ychahbi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 08:10:58 by ychahbi           #+#    #+#             */
-/*   Updated: 2024/01/24 11:19:23 by ychahbi          ###   ########.fr       */
+/*   Updated: 2024/02/13 08:38:48 by ychahbi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,14 @@ int main()
     for (int i = 0; i < 100; i++)
         continer_a[i] = i;
 
-    easyfind(continer_v, 65);
-    easyfind(continer_l, 65);
-    easyfind(continer_a, 65);
+    try
+    {        
+        easyfind(continer_v, 65);
+        easyfind(continer_l, 65);
+        easyfind(continer_a, 65);
+    }
+    catch(std::exception& e)
+    {
+        std::cout << e.what() << std::endl;
+    }
 }

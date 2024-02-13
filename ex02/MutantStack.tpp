@@ -6,7 +6,7 @@
 /*   By: ychahbi <ychahbi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 17:27:12 by ychahbi           #+#    #+#             */
-/*   Updated: 2024/01/25 17:26:37 by ychahbi          ###   ########.fr       */
+/*   Updated: 2024/02/13 09:45:19 by ychahbi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,4 +42,6 @@ typename MutantStack<T>::iterator MutantStack<T>::rend()
     return this->c.rend();
 }
 
+template <typename T>
+MutantStack<T>::~MutantStack(){}
 #endif

@@ -6,7 +6,7 @@
 /*   By: ychahbi <ychahbi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/24 12:30:59 by ychahbi           #+#    #+#             */
-/*   Updated: 2024/01/24 17:23:26 by ychahbi          ###   ########.fr       */
+/*   Updated: 2024/02/13 09:40:03 by ychahbi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,30 @@ void    Span::addNumber(int add)
     else
         throw "Max Range is Reached!";
 };
+
+Span::Span(const Span& Copy)
+{
+    *this = Copy;
+}
+
+Span& Span::operator=(const Span& Copy)
+{
+    this->N = Copy.getN();
+
+    for (unsigned int i = 0; i < Copy.vect.size(); i++)
+        vect.push_back(Copy.getVector(i));
+    return (*this);
+}
+
+unsigned int Span::getVector(int i) const
+{
+    return (vect.at(i));
+}
+
+const unsigned int& Span::getN() const
+{
+    return (N);
+}
 
 int    Span::shortestSpan()
 {
